@@ -16,6 +16,8 @@ Features:
 
 Feel free to fork, star ⭐, and contribute to the project!
 
+![image alt](https://github.com/hassan-12-source/zodiac-here/blob/main/fortune-image.png)
+
 
 # Getting Started with Create React App
 

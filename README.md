@@ -1,3 +1,22 @@
+Your Zodiac Here 🌟
+
+Discover your zodiac sign and its traits with Your Zodiac Here, a sleek and interactive web application built with ReactJS and styled using CSS. The app provides users with a seamless experience, showcasing modern design and responsive functionality.
+
+Link : https://your-zodiac-here.netlify.app/
+
+Features:
+
+- Interactive UI: Navigate through the app effortlessly to find your zodiac sign.
+- Modern Design: Built with responsive CSS for a smooth user experience across devices.
+- Fast and Reliable: Hosted on Netlify for quick access anytime, anywhere.
+- Technologies Used:
+- ReactJS: For dynamic, component-based UI development.
+- CSS: To create a visually appealing and responsive design.
+- Check it out live here: Your Zodiac Here
+
+Feel free to fork, star ⭐, and contribute to the project!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

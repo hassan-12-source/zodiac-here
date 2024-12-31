@@ -1,0 +1,242 @@
+.hero-section{
+    position: relative;
+    top: 100px;
+    right: 100%;
+    left: 0;
+    justify-content: center;
+}
+.hero-conatainer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-conatainer img{
+    width: 80%;
+    max-width: 930px;
+}
+.hero-text{
+    margin-top: 25px;
+    gap: 15px;
+}
+.hero-conatainer h1{
+    font-family: "Spectral", serif;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: normal;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+.hero-conatainer p{
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.book-btn{
+    margin-top: 15px;
+}
+.book-btn button{
+    background-color: transparent;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    padding: 12px 18px;
+    border: none;
+    background-color: #BF9D50;
+    cursor: pointer;
+    font-weight: 600;
+}
+.book-btn button:hover{
+    background-color: #dab55d;
+}
+
+@media (max-width: 700px) {
+    .hero-conatainer img{
+        width: 80%;
+        max-width: 930px;
+    }
+}
+
+/************ Popup form **********************/
+.popup-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.popup {
+    background: #181818;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1001;
+    position: relative; 
+}
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+.popup span,
+.popup h2,
+.popup p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    display: block;
+}
+.popup span{
+    color: #BF9D50;
+    font-size: 0.8rem;
+}
+.popup h2{
+    color: white;
+    font-size: 1.8rem;
+}
+.popup p{
+    color: white;
+    font-size: 1rem;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    resize: vertical;
+    text-align: left;
+}
+
+.submit-btn-container {
+    text-align: left;
+}
+.submit-btn{
+    background-color: transparent;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    padding: 12px 18px;
+    border: none;
+    background-color: #BF9D50;
+    cursor: pointer;
+    font-weight: 600;
+}
+.submit-btn:hover {
+    background-color: #dab55d;
+}
+/********** Form part **************/
+
+.aside-navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 110vh;
+    background-color: #333;
+    color: white;
+    transition: left 0.4s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.aside-navbar.open{
+    left: 0;
+}
+.aside-navbar .close-icon {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+
+.aside-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.aside-navbar ul li a:hover {
+    color: #00bcd4;
+}
+@media (max-width: 767px) {
+    .nav-links{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+        color: whitesmoke;
+        font-size: 2rem;
+        margin-right: -40px;
+    }
+}
+.booking-btn-mobile{
+    padding: 15px;
+    margin-left: -12px;
+}
+.booking-btn-mobile button{
+    background-color: transparent;
+    color: #BF9D50;
+    border: 1px solid #BF9D50;
+    font-family: "PT Sans", sans-serif;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.booking-btn-mobile button:hover{
+    background-color: #BF9D50;
+    color: whitesmoke;
+}

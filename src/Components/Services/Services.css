@@ -1,0 +1,177 @@
+.services-secion {
+    margin-top: 250px;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.header-services {
+    padding-top: 200px;
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+.header-services h1 {
+    font-family: "Spectral", serif;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.header-services p {
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.services-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 15px;
+}
+
+.cards {
+    border: 1px solid #dab55d;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards img {
+    width: 40%;
+    height: auto;
+}
+
+.services-card .cards:nth-child(2) img {
+    width: 50%;
+    height: auto;
+}
+
+.cards h1 {
+    font-family: "PT Sans", sans-serif;
+    color: #dab55d;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cards h1:hover {
+    color: #d4aa49;
+    cursor: pointer;
+}
+
+.cards p {
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+@media (max-width: 547px) {
+    .services-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 372px) {
+    .services-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.header-services,
+.services-card,
+.consultation-container {
+    will-change: opacity, transform; /* Optimize for animations */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fallback */
+}
+
+/*********** Consultation Part **********************/
+
+.consultation-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 100px 20px; 
+    gap: 30px;
+}
+
+.consulation-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 400px; 
+}
+
+.consulation-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+}
+
+.consulation-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "PT Sans", sans-serif;
+    color: whitesmoke;
+    
+}
+
+.consulation-btn button {
+    background-color: transparent;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    padding: 12px 18px;
+    border: none;
+    background-color: #BF9D50;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.consulation-btn button:hover {
+    background-color: #dab55d;
+}
+
+.consultation-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 400px;
+}
+
+.consultation-image img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 768px) {
+    .consultation-container {
+        flex-direction: column; 
+        padding: 20px;
+        gap: 15px; 
+    }
+
+    .consulation-content {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .consultation-image {
+        margin-right: 0; 
+        justify-content: center;
+    }
+}

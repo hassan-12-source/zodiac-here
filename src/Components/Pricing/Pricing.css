@@ -1,0 +1,94 @@
+.pricing-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pricing-header {
+    margin-top: 200px;
+}
+
+.pricing-header h1 {
+    font-family: "Spectral", serif;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.pricing-header p {
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 25px;
+    padding: 15px 0 15px;
+}
+
+.pricing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #dab55d;
+    gap: 15px;
+    padding: 35px;
+    height: auto;
+}
+
+.pricing-content h1 {
+    font-family: "Spectral", serif;
+    color: #dab55d;
+}
+
+.pricing-content p {
+    color: white;
+}
+
+.pricing-content span {
+    font-size: 3rem;
+    font-family: "Spectral", serif;
+    color: #dab55d;
+    font-weight: 500;
+}
+
+.pricing-button {
+    background-color: #dab55d;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.pricing-button:hover {
+    background-color: #dab96c;
+}
+
+/*********** Mobile Screen *******************/
+@media (max-width: 768px) {
+    .pricing-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+    .pricing-header {
+        padding: 15px;
+    }
+}
+@media (max-width: 425px) {
+    .pricing-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

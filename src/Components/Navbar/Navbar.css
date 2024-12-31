@@ -1,0 +1,131 @@
+.navbar {
+    background-image: url('/././public/images/all03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.nav-links{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "PT Sans", sans-serif;
+}
+.nav-links a:hover{
+    color: #BF9D50;
+}
+.booking-btn{
+    margin-top: -5px;
+}
+.booking-btn button{
+    background-color: transparent;
+    color: #BF9D50;
+    border: 1px solid #BF9D50;
+    font-family: "PT Sans", sans-serif;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.booking-btn button:hover{
+    background-color: #BF9D50;
+    color: whitesmoke;
+}
+.menu-icon{
+    display: none;
+}
+
+
+/***** NavBar Mobile CSS ************************/
+
+.aside-navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 110vh;
+    background-color: #333;
+    color: white;
+    transition: left 0.4s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.aside-navbar.open{
+    left: 0;
+}
+.aside-navbar .close-icon {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+
+.aside-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.aside-navbar ul li a:hover {
+    color: #00bcd4;
+}
+@media (max-width: 767px) {
+    .nav-links{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+        color: whitesmoke;
+        font-size: 2rem;
+        margin-right: -40px;
+    }
+}
+.booking-btn-mobile{
+    padding: 15px;
+    margin-left: -12px;
+}
+.booking-btn-mobile button{
+    background-color: transparent;
+    color: #BF9D50;
+    border: 1px solid #BF9D50;
+    font-family: "PT Sans", sans-serif;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.booking-btn-mobile button:hover{
+    background-color: #BF9D50;
+    color: whitesmoke;
+}

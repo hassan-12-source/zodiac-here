@@ -1,0 +1,92 @@
+body {
+    min-height: 200vh;
+}
+  .zodiac-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+.zodiac-header{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 80px;
+}
+.zodiac-header h1{
+    font-family: "Spectral", serif;
+    font-size: 4rem;
+    font-weight: normal;
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.zodiac-header p{
+    font-family: "PT Sans", sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+.zodiac-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 35px;
+}
+.zodiac-image {
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #BF9D50;
+    padding: 15px;
+}
+.card-content h1{
+    font-family: "Spectral", serif;
+    color: white;
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+.card-content span{
+    font-family: "PT Sans", sans-serif;
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+/****** Mobile Screen Part *************/
+@media (max-width: 768px) {
+    .zodiac-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+    .zodiac-header{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 80px;
+        padding: 15px 15px;
+    }
+    .zodiac-header h1{
+        font-family: "Spectral", serif;
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .zodiac-header p{
+        font-family: "PT Sans", sans-serif;
+        color: whitesmoke;
+        font-weight: 100;
+        width: 300px;
+    }
+}
+@media (max-width: 425px) {
+    .zodiac-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
